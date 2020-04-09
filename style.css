@@ -1,0 +1,307 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+img {
+  width: 100%;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 15vh;
+  padding: 0px 20px 0px 20px;
+  margin-bottom: 5vh;
+}
+
+header img {
+  width: 100px;
+}
+.resume {
+  display: flex;
+  justify-content: space-between;
+}
+.resume-btn {
+  color: #2c3e50;
+  text-decoration: none;
+  font-size: 16px;
+  border: 2px solid #2c3e50;
+  padding: 5px 10px 5px 10px;
+  border-radius: 15px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.resume-btn:hover {
+  color: #e8505b;
+  border: 2px solid #e8505b;
+}
+.resume i {
+  font-size: 35px;
+  padding-right: 10px;
+  cursor: pointer;
+}
+.resume i:hover {
+  color: #e8505b;
+}
+/* HERO */
+
+.hero {
+  text-align: center;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.hero h2 {
+  color: #2c3e50;
+  font-size: 33px;
+  font-weight: 600;
+}
+.name {
+  color: #e8505b;
+}
+.hero img {
+  margin-top: 5vh;
+  margin-bottom: 8vh;
+}
+
+#underline {
+  text-decoration: underline;
+  color: #2c3e50;
+}
+h4 {
+  color: #2c3e50;
+  font-size: 16px;
+  width: 450px;
+  margin: 0 auto;
+  margin-top: 1vh;
+  display: none;
+}
+
+/* PROJECTS */
+
+.projects {
+  background-color: #2c3e50;
+  min-width: 100%;
+  padding-top: 3vh;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 20px 30px;
+}
+
+.projects-grid img {
+  height: 260px;
+  border-radius: 5%;
+}
+
+.projects h2 {
+  color: #fff;
+  font-weight: bolder;
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 4vh;
+  display: block;
+}
+
+.projects-grid {
+  width: 95%;
+  margin: 0 auto;
+  padding-bottom: 5vh;
+}
+.projects-grid div {
+  border-radius: 5%;
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 260px;
+}
+.project3 {
+  background: url(./img/signUpForm.jpg);
+}
+.project1 {
+  background: url(./img/bookmark.jpg);
+}
+.project2 {
+  background: url(./img/indecisionApp.jpg);
+}
+.project4 {
+  background: url(./img/rockpaperscissors.jpg);
+}
+.project5 {
+  background: url(./img/wordBeaterr.jpg);
+}
+.project6 {
+  background: url(./img/fylo.jpg);
+}
+.project7 {
+  background: url(./img/calculatorr.jpg);
+}
+.project8 {
+  background: url(./img/huddle.jpg);
+}
+/* CONTACT */
+
+.contact h2 {
+  text-align: center;
+  color: #2c3e50;
+  font-size: 30px;
+  margin-top: 3vh;
+}
+
+.contact i {
+  font-size: 55px;
+  padding: 15px;
+}
+
+.fa-linkedin-in {
+  color: #3498db;
+  cursor: pointer;
+}
+.fa-envelope {
+  color: #e74c3c;
+  cursor: pointer;
+}
+.fa-github {
+  color: #2c3e50;
+  cursor: pointer;
+}
+.fa-facebook {
+  color: #273c75;
+  cursor: pointer;
+}
+.contact-flex {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2vh;
+}
+
+footer {
+  background-color: #2c3e50;
+  color: #fff;
+  font-size: 20px;
+  text-align: center;
+}
+
+/* OVERLAY */
+.overlay {
+  background: #2c3e50;
+  border: 2px solid #fff;
+  transition: all 0.4s;
+}
+.none {
+  display: none;
+}
+
+.project1-overlay,
+.project2-overlay,
+.project3-overlay,
+.project4-overlay,
+.project5-overlay,
+.project6-overlay,
+.project7-overlay,
+.project8-overlay {
+  text-align: center;
+  padding-top: 6vh;
+}
+.project-btn a {
+  background-color: #2c3e50;
+  border: 1px solid #e74c3c;
+  border-radius: 20px;
+  padding: 10px 15px 10px 15px;
+  color: #fff;
+  font-weight: bold;
+  margin-top: 2vh;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.project-btn a:hover {
+  background-color: #e74c3c;
+}
+.project-btn a {
+  text-decoration: none;
+  color: #fff;
+}
+.html {
+  color: #27ae60;
+}
+
+.css {
+  color: #2980b9;
+}
+
+.react {
+  color: #3498db;
+}
+
+.scss {
+  color: #9b59b6;
+}
+.js {
+  color: #f1c40f;
+}
+
+span {
+  font-weight: bold;
+}
+
+.projects-grid h2 {
+  margin-bottom: 10px;
+}
+
+@media (min-width: 992px) {
+  h4 {
+    display: block;
+  }
+  .hero h2 {
+    font-size: 45px;
+  }
+  .hero img {
+    width: 650px;
+    height: 650px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .projects > h2 {
+    font-size: 35px;
+  }
+  .contact h2 {
+    font-size: 35px;
+  }
+  .contact i {
+    font-size: 70px;
+    padding: 15px 30px 15px 30px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .resume a {
+    font-size: 18px;
+  }
+  .resume i {
+    font-size: 40px;
+  }
+  .hero h2 {
+    font-size: 60px;
+  }
+  h4 {
+    font-size: 20px;
+  }
+  .projects > h2 {
+    font-size: 40px;
+  }
+  .contact h2 {
+    font-size: 40px;
+  }
+  .contact i {
+    font-size: 80px;
+    padding: 15px 45px 15px 45px;
+  }
+}
